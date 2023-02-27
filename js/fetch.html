@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento json</title>
+</head>
+<body>
+    
+    <p id="demo">
+
+    </p>
+
+    <script>
+
+    fetch('http://jasonplaceholder.typicode.com/todos/1')
+        .then(response => response.jason())
+        .then(json => console.log)    
+        const persona = '{"nombre":"jonatan", "edad":31, "nacionalidad":"argentino"}';
+        const obj = JSON.parse(persona);
+        console.log(obj);
+        document.getElementById("demo").innerHTML =
+        "Nombre: "+obj.nombre+
+        "Edad: "+obj.edad+
+        "Nacionalidad: "+obj.nacionalidad;
+    </script>
+</body>
+</html>
